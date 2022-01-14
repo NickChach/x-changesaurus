@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #000000;
+    color: #FFFFFF;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+img {
+    display: block;
+    width: 15rem;
+    height: auto;
+    margin: 2rem auto;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #F24236;
+    width: fit-content;
+    margin: 2rem auto;
+    font-family: 'Cardo', serif;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: 0.25rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p, form {
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+p {
+    font-size: 1.2rem;
+    word-spacing: 0.35rem;
+}
+
+form {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    border: 2px solid #494949;
+    border-radius: 1rem;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.25rem;
+}
+
+select, option, button {
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 0.25rem 0.75rem;
+}
+
+input {
+    font-family: 'Merriweather Sans', sans-serif;
+    width: 5rem;
+    padding: 0.25rem;
+}
+
+select {
+    width: 5rem;
+}
+
+
+button {
+    flex-grow: 0;
+    align-self: flex-end;
+}
+
+#smallscreen {
+    display: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button[type="button"] {
+    font-size: 1.2rem;
+    padding: 0.05rem 0.75rem;
+}
+
+button[type="submit"] {
+    background-color: #F24236;
+    border-color: #F24236;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 0.15rem 0.75rem;
+    letter-spacing: 0.05rem;
+    border-radius: 0.25rem;
+}
+
+#result {
+    width: fit-content;
+    border: 2px solid #494949;
+    border-radius: 1rem;
+    padding: 2rem;
+    margin: 2rem auto 1rem auto;
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem 8rem;
+    }
+
+    div {
+        align-items: center;
+    }
+
+    button {
+        align-self: center;
+    }
+
+    #bigscreen {
+        display: none;
+    }
+
+    #smallscreen {
+        display: inline-block;
+    }
+
+    #result {
+        max-width: 83%;
+        padding: 2rem 1rem;
+    }
+}
