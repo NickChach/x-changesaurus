@@ -1,8 +1,8 @@
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
         navigator.serviceWorker.register("/service-worker.js")
-        .then(reg => console.log("Service worker says hi!"))
-        .catch(error => console.log(error));
+        .then(registration => console.log("Service worker says hi!"))
+        .catch(error => console.log("epic fail", error));
     })
 }
 

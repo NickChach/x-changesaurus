@@ -1,6 +1,7 @@
 const staticCache = "x-changesaurus-v.1.0";
+const dynamicCache = "dynamic-v.1.0";
 
-const staticFiles = ["./", "./index.js", "./index.css", "./favicon.ico", "./euro.jpg"];
+const staticFiles = ["./", "./index.html", "./index.js", "./index.css", "./favicon.ico", "./euro.jpg", "https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Merriweather+Sans:wght@300;400;700&display=swap"];
 
 self.addEventListener("install", async () => {
     const cache = await caches.open(staticCache);
@@ -8,6 +9,13 @@ self.addEventListener("install", async () => {
 });
 
 self.addEventListener("activate", event => {
+    event.waitUntil(caches.keys().then(keyList => {
+        return Promise.all(keyList.map(key => {
+            if (key !== staticCache && key !== dynamicCache) {
+                return caches.delete(key);
+            }
+        }));
+    }));
     return self.clients.claim();
 });
 
@@ -29,7 +37,7 @@ async function cacheFirst(request) {
 }
 
 async function networkFirst(request) {
-    const cache = await caches.open("exchangerate-api");
+    const cache = await caches.open(dynamicCache);
     try {
         const response = await fetch(request);
         cache.put(request, response.clone());
