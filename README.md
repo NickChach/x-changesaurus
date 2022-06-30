@@ -11,3 +11,6 @@
  ## Progressive Web App Features
  * The app can be installed on the device of your preference.
  * Caching enabled for partial offline functionality.
+ 
+ ## API Key
+ The API key is not included in the repository. It is added to the app on deploy via a build command.
