@@ -1,5 +1,5 @@
 # X-changesaurus
- A currency conversion calculator Progressice Web App created with HTML5, CSS3 and JavaScript. 
+ A currency conversion calculator Progressive Web App created with HTML5, CSS3 and JavaScript. 
 
  ---
 
