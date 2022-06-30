@@ -9,7 +9,7 @@
  ---
 
  ## Progressive Web App Features
- * The app can be installed on the device of your preference.
+ * The app can be installed on the device of your preference, provided PWAs are supported.
  * Caching enabled for partial offline functionality.
  
  ## API Key
