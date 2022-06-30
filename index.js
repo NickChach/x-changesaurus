@@ -14,7 +14,7 @@ const result = document.querySelector("#result")
 const form = document.querySelector("form")
 
 function convert() {
-    fetch(`https://v6.exchangerate-api.com/v6/86ef3b3bcca802b90a1ea572/latest/${from.value}`)
+    fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/latest/${from.value}`)
         .then(response => response.json())
         .then(data => {
             if (amount.value == 1) {

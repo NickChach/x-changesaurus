@@ -1,5 +1,5 @@
-const staticCache = "x-changesaurus-v.1.0";
-const dynamicCache = "dynamic-v.1.0";
+const staticCache = "x-changesaurus-v.1.4";
+const dynamicCache = "dynamic-v.1.2";
 
 const staticFiles = ["./", "./index.html", "./index.js", "./index.css", "./favicon.ico", "./euro.jpg", "https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=Merriweather+Sans:wght@300;400;700&display=swap"];
 
