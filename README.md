@@ -4,7 +4,7 @@
  ---
 
  ## Visit
- https://www.x-changesaurus.com/
+ https://www.x-changesaurus.com
 
  ---
 
